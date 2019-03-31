@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MealAndMeet</string>
+    <string name="yourName">Your name</string>
+    <string name="yourEmail">Your e-mail</string>
+    <string name="yourAge">Your age</string>
+    <string name="yourSurnames">Your surname</string>
+    <string name="yourAddress">Your meeting address</string>
+    <string name="youpassword">Your password</string>
+    <string name="youpasswordTwice">Repeat password</string>
+    <string name="loadingText">Loading...</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="invalid_parameters">Invalid parameters</string>
+    <string name="welcome">Welcome</string>
+    <string name="closestFriend">Closest friend at </string>
+    <string name="send_profile">Send</string>
+    <string name="cancel_profile">Cancel</string>
+</resources>
