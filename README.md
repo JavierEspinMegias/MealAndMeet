@@ -9,5 +9,8 @@ Implementacion completa y funcional 100%.
 
 
 ----------------------
-![Start activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura.PNG)
-![Home activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura2.PNG)
+![Start activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura3.PNG)
+![Home activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura4.PNG)
+![Groups activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura5.PNG)
+![Maps activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura6.PNG)
+![Dates activity](https://github.com/JavierEspinMegias/MealAndMeat/blob/master/capturas/Captura7.PNG)
