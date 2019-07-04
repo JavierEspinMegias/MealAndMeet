@@ -1,10 +1,23 @@
 package com.example.cosmo.comer8;
 
+import android.support.annotation.NonNull;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class User {
 
-    private String name, email, pass, surname, address, id, nick;
+    private String name, email, pass, surname, address, id, nick, phone;
     private int age;
-    private double latitud, longitud;
+    private double latitude, longitude, area;
+
+    private boolean isActive;
+
+    protected FirebaseDatabase database;
+    protected DatabaseReference refe;
 
 
     public User(){
@@ -16,11 +29,14 @@ public class User {
         this.age = 0;
         this.id = "";
         this.nick = "";
-        this.latitud = 0.0;
-        this.longitud = 0.0;
+        this.latitude = 0.0;
+        this.longitude = 0.0;
+        this.phone = "";
+        this.area = 0.0;
+        this.isActive = true;
     }
 
-    public User(String name, String email, String pass, String surname, String address, int age, String id, String nick, double latitud, double longitud) {
+    public User(String name, String email, String pass, String surname, String address, int age, String id, String nick, double latitude, double longitude, String phone, Double area, boolean isActive) {
         this.name = name;
         this.email = email;
         this.pass = pass;
@@ -29,24 +45,50 @@ public class User {
         this.age = age;
         this.id = id;
         this.nick = nick;
-        this.latitud = latitud;
-        this.longitud = longitud;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.phone = phone;
+        this.area = area;
+        this.isActive = true;
     }
 
-    public double getLatitud() {
-        return latitud;
+
+    public Double getArea() {
+        return area;
     }
 
-    public void setLatitud(double latitud) {
-        this.latitud = latitud;
+    public void setArea(Double area) {this.area = area; }
+
+    public String getPhone() {
+        return phone;
     }
 
-    public double getLongitud() {
-        return longitud;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public void setLongitud(double longitud) {
-        this.longitud = longitud;
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
     public String getId() {

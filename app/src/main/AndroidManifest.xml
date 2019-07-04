@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cosmo.comer8">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -7,16 +8,20 @@
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logomm"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logomm"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".CreateGroup"></activity>
-        <activity android:name=".MyProfile" />
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Admin"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -30,18 +35,76 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".ViewLocation"
+            android:label="@string/title_activity_view_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateWhats"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectDateLocation"
+            android:label="@string/title_activity_select_date_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectCalendarLocation"
+            android:label="@string/title_activity_select_calendar_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateMealCal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewSingleDateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsersRequests"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".GroupServices"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ViewMyGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Dates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectLocation"
+            android:label="@string/title_activity_select_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyGroups"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfile"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
-        <activity android:name=".Start">
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Start"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Register" />
-        <activity android:name=".InfoUser" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
