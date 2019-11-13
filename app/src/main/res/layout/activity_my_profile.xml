@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".MyProfile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/buttonsMain"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars[3]" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/bgTitle"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="232dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="example: John"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/yourName"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editSurname"
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="example: Doe"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/yourSurnames"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="johnDoe@example.com"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/yourEmail"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editPass"
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="johnLikesDoe"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/youpassword"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editPass2"
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="johnLikesDoe"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/pass2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/youpasswordTwice"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="example: Baker Street"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/yourAddress"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@color/bgTitle"
+            android:orientation="horizontal"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp">
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="217dp"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@color/buttonsMain"
+                android:ems="10"
+                android:hint="example: 25"
+                android:inputType="textPersonName"
+                android:padding="4dp"
+                android:textColorHint="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/yourAge"
+                android:textColor="#363636"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/bgTitle"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/cancel_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonsMain"
+            android:text="@string/cancel_profile"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/send_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/buttonsMain"
+            android:text="@string/send_profile"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
