@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="bgLists">#1DFF2F01</color>
-    <color name="buttonsMain">#E5D52E00</color>
+    <color name="colorPrimary">#3C3C3C</color>
+    <color name="colorPrimaryDark">#272727</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="bgLists">#0FFF8F86</color>
+    <color name="buttonsMain">#C1F44336</color>
+    <color name="calendarColor">#F49136</color>
     <color name="wordsTitle">#ffffff</color>
-    <color name="bgTitle">#6DF5F5F5</color>
+    <color name="bgTitle">#6DBEBEBE</color>
+    <color name="transparent"></color>
+    <color name="roundButton">#F2FFFFFF</color>
+    <color name="accentTrans">#3FF44336</color>
+    <color name="lightGrey">#E2E2E2</color>
 </resources>

@@ -4,6 +4,240 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/bg"
     tools:context=".CreateGroup">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/infoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/info_title"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="240dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <EditText
+                    android:id="@+id/getInfo"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/info_example"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textAlignment="textEnd"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/priceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/price_title"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="240dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <EditText
+                    android:id="@+id/getPrice"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="10"
+                    android:inputType="number"
+                    android:paddingLeft="12dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="58dp">
+
+                <TextView
+                    android:id="@+id/chooseMealTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/choose_meet"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <EditText
+                    android:id="@+id/getMeal"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hamburguers"
+                    android:inputType="text"
+                    android:paddingLeft="12dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="33dp">
+
+                <TextView
+                    android:id="@+id/chooseDayTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/choose_day"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="86dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <Spinner
+                    android:id="@+id/getDay"
+                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/monday"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="58dp">
+
+                <TextView
+                    android:id="@+id/chooseHourTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:text="@string/choose_hour"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="134dp" />
+
+                <EditText
+                    android:id="@+id/getHour"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="14:00"
+                    android:inputType="time"
+                    android:paddingLeft="12dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/lightGrey"
+                android:inputType="text"
+                android:onClick="goSelectLocation"
+                android:text="@string/select_location" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/lightGrey"
+                android:inputType="text"
+                android:onClick="openImageIntent"
+                android:text="@string/select_photo" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="122dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:background="@drawable/common_google_signin_btn_text_light_normal_background"
+                android:elevation="6dp" />
+
+            <Button
+                android:id="@+id/sendGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:elevation="22dp"
+                android:inputType="text"
+                android:onClick="sendGroup"
+                android:text="@string/send_group"
+                android:textColor="@color/wordsTitle" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

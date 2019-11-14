@@ -10,9 +10,9 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="148dp"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@color/bgTitle"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,45 +54,61 @@
         android:layout_height="111dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/round_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:fontFamily="monospace"
         android:gravity="center_vertical|center_horizontal"
         android:hint="Login"
         android:onClick="onLogin"
-        android:textColorHint="@android:color/background_light"
-        android:textColorLink="@color/bgTitle"
+        android:textColorHint="@color/wordsTitle"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/go"
-        android:layout_width="77dp"
-        android:layout_height="77dp"
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/round_button"
-        android:fontFamily="monospace"
-        android:gravity="center_vertical|center_horizontal"
-        android:hint="Go!"
-        android:onClick="onGo"
-        android:textColorHint="@android:color/background_light"
-        android:textColorLink="@color/bgTitle"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBox" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/go"
+            android:layout_width="89dp"
+            android:layout_height="89dp"
+            android:backgroundTint="@color/calendarColor"
+            android:onClick="onGo"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="586dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="32dp"
+            android:text="@string/go"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimary"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
 
     <LinearLayout
         android:id="@+id/loginBox"
         android:layout_width="224dp"
         android:layout_height="89dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/bgTitle"
+        android:background="@color/colorPrimary"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -123,19 +139,6 @@
             android:textColorHint="@color/wordsTitle"
             android:textSize="14sp" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="147dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/common_google_signin_btn_text_dark_default"
-        android:hint="admin"
-        android:onClick="goAdmin"
-        android:textColorHint="@color/buttonsMain"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/progressBar"
@@ -169,7 +172,7 @@
                 android:layout_marginTop="0dp"
                 android:background="@drawable/round_button"
                 android:indeterminate="true"
-                android:indeterminateTint="@color/bgTitle"
+                android:indeterminateTint="@color/colorPrimary"
                 android:progress="@android:integer/config_longAnimTime" />
         </RelativeLayout>
 

@@ -2,122 +2,210 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bg"
+    android:background="@drawable/grandient_list"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="144dp"
-        android:layout_height="155dp"
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="352dp"
-        android:background="@color/bgLists"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="77dp"
+        android:elevation="32dp"
+        android:onClick="goMaps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ListView
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/calendarColor"
+            tools:layout_editor_absoluteX="329dp"
+            tools:layout_editor_absoluteY="455dp" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
+            android:layout_gravity="center"
+            android:elevation="32dp"
+            android:text="@string/search"
+            android:onClick="goMaps"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32dp"
+            android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="144dp"
-        android:layout_height="237dp"
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/bgLists"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="goMyGroups"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline7">
 
-        <ListView
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button1"
+            android:layout_width="99dp"
+            android:layout_height="99dp"
+            android:elevation="32dp"
+            android:backgroundTint="@color/colorPrimary"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="586dp" />
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="128dp"
-        android:background="@drawable/round_button"
-        android:gravity="center_vertical|center_horizontal"
-        android:hint="Groups"
-        android:textColorHint="@android:color/background_light"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:layout_gravity="center"
+            android:elevation="32dp"
+            android:text="@string/my_groups"
+            android:inputType="textMultiLine"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/wordsTitle"
+            android:textSize="14dp"
+            android:onClick="goMyGroups"
+            android:textStyle="bold" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/round_button"
+        android:fontFamily="@font/mbold"
         android:gravity="center_vertical|center_horizontal"
         android:hint="Me"
         android:onClick="myProfile"
-        android:textColorHint="@android:color/background_light"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button4"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:backgroundTint="@color/buttonsMain"
+            android:elevation="32dp"
+            android:onClick="goDates"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="586dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="32dp"
+            android:inputType="textMultiLine"
+            android:text="@string/my_calendars"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/wordsTitle"
+            android:textSize="18dp"
+            android:onClick="goDates"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="111dp"
-        android:layout_height="111dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="352dp"
-        android:background="@drawable/round_button"
-        android:gravity="center_vertical|center_horizontal"
-        android:hint="Search!"
-        android:onClick="irMapas"
-        android:textColorHint="@android:color/background_light"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/logOut"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@mipmap/ic_log_out"
+        android:backgroundTint="@color/wordsTitle"
+        android:elevation="3dp"
+        android:fontFamily="monospace"
+        android:onClick="logOut"
+        android:padding="0dp"
+        android:textColor="@color/wordsTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="99dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="240dp"
-        android:background="@drawable/round_button"
-        android:gravity="center_vertical|center_horizontal"
-        android:hint="Dates"
-        android:textColorHint="@android:color/background_light"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDatesMain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarSize="33dp"
+        android:scrollbarThumbVertical="@color/lightGrey"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="102dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
-        android:background="@color/buttonsMain"
-        android:padding="5dp"
-        android:text="Local Groups"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:text="@string/last_dates"
         android:textColor="@color/wordsTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="101dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="324dp"
-        android:background="@color/buttonsMain"
-        android:padding="5dp"
-        android:text="Local Users"
-        android:textColor="@color/wordsTitle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+
 </android.support.constraint.ConstraintLayout>

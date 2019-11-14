@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal|top"
+    android:background="@drawable/grandient_bg3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_dates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:inputType="text"
+                android:padding="3dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="@string/view_date"
+                android:textColor="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCalendarDates"
+                android:layout_width="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/accentTrans"
+                android:layout_height="150dp"
+                android:layout_gravity="left"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_explained_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:inputType="text"
+                android:padding="3dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="@string/selected_dates"
+                android:textColor="@color/wordsTitle"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvExplainedDates"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/accentTrans"
+                android:layout_gravity="left"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/watch_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="@color/wordsTitle"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:textStyle="bold"
+        android:text="@string/watch_date"
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp" />
+
+    <com.applikeysolutions.cosmocalendar.view.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/wordsTitle"
+        app:layout_constraintEnd_toEndOf="@+id/layout_calendar">
+
+    </com.applikeysolutions.cosmocalendar.view.CalendarView>
+
+
+</LinearLayout>

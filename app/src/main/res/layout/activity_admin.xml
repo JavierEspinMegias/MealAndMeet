@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_admin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grandient_list"
+    tools:context=".Admin">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+            android:backgroundTint="@color/wordsTitle"
+            android:elevation="3dp"
+            android:fontFamily="monospace"
+            android:inputType="text"
+            android:onClick="logOut"
+            android:padding="0dp"
+            android:text="@string/log_out"
+            android:textColor="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+            android:backgroundTint="@color/colorPrimary"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/groupPhotos_admin"
+                android:layout_width="141dp"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/wordsTitle"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadGroupPhotos"
+                android:padding="0dp"
+                android:text="@string/admin_group_images"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/userPhotos_admin"
+                android:layout_width="141dp"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/wordsTitle"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadUserPhotos"
+                android:padding="0dp"
+                android:text="@string/user_images"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/groups_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadGroups"
+                android:padding="0dp"
+                android:text="@string/groups_admin"
+                android:textColor="@color/wordsTitle" />
+
+            <Button
+                android:id="@+id/users_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadUsers"
+                android:padding="0dp"
+                android:text="@string/users_admin"
+                android:textColor="@color/wordsTitle" />
+
+            <Button
+                android:id="@+id/calendars_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadCalendars"
+                android:padding="0dp"
+                android:text="@string/my_calendars"
+                android:textColor="@color/wordsTitle" />
+
+            <Button
+                android:id="@+id/dates_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="3dp"
+                android:fontFamily="monospace"
+                android:inputType="text"
+                android:onClick="loadDates"
+                android:padding="0dp"
+                android:text="@string/admin_dates"
+                android:textColor="@color/wordsTitle" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
