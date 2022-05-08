@@ -1,4 +1,4 @@
-# MealAndMeat
+# MealAndMeet
 Android Java - min API lvl 22
 
 La idea de esta app es reunir gente y comer juntos. Se reunirán en la casa de un miembro del grupo o en un lugar público, dicho miembro correrá con los gastos del almuerzo y la preparación y demás imprevistos que puedan surgir de la reunión. Cada participante propondrá un menú para el día que le toque adecuado a un gasto previamente pactado donde cada vez cocinará o será anfitrión un integrante del grupo. Los demás irán al lugar pactado a almorzar, cenar o cualquier otra situación.
